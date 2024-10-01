@@ -1,26 +1,24 @@
-'use client'
+import React, { useState } from 'react'
 import { div } from 'framer-motion/client'
 import Image from 'next/image'
-import React, { useState } from 'react'
-
-function StoryType() {
+function AgeGroup() {
     const OptionList=[
 
         {
-            label:'Story Book',
-            imageUrl:'/story.png',
+            label:'0-2 Years',
+            imageUrl:'/02Years.png',
             isFree:true
 
         },
         {
-            label:'Bed Story',
-            imageUrl:'/bedstory.png',
+            label:'3-5 Years',
+            imageUrl:'/35Years.png',
             isFree:true
 
         },
         {
-            label:'Educational',
-            imageUrl:'/educational.png',
+            label:'5-8 Years',
+            imageUrl:'/58Years.png',
             isFree:true
 
         }
@@ -28,7 +26,7 @@ function StoryType() {
     const [selectedOption,setSelectedOption]=useState<string>();
   return (
     <div>
-        <label className='font-bold text-3xl text-primary'>2. Story Type</label>
+        <label className='font-bold text-3xl text-primary'>3. Age Group</label>
         <div className='grid grid-cols-3 gap-5 mt-3'>
             {OptionList.map((item,index)=>(
                 <div className={`relative grayscale hover:grayscale-0 cursor-pointer p-1 ${selectedOption==item.label?'grayscale-0 border-2 rounded-3xl border-primary':'grayscale'}`} onClick={()=>setSelectedOption(item.label)}>
@@ -45,4 +43,4 @@ function StoryType() {
   )
 }
 
-export default StoryType
+export default AgeGroup

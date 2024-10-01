@@ -3,6 +3,8 @@
 import React from 'react'
 import StorySubjectInput from './_components/StorySubjectInput'
 import StoryType from './_components/StoryType'
+import AgeGroup from './_components/AgeGroup'
+import ImageStyle from './_components/ImageStyle'
 
 export interface fieldData{
   fieldName:string,
@@ -20,6 +22,8 @@ function CreateStory() {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-14'>
         <StorySubjectInput userSelection={onHandleUserSelection} />
         <StoryType/>
+        <AgeGroup/>
+        <ImageStyle/>
       </div>
     </div>
   )
