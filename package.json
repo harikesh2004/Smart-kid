@@ -16,15 +16,21 @@
     "@neondatabase/serverless": "^0.9.5",
     "@nextui-org/button": "^2.0.38",
     "@nextui-org/input": "^2.2.5",
+    "@nextui-org/modal": "^2.0.41",
     "@nextui-org/navbar": "^2.0.37",
     "@nextui-org/react": "^2.4.8",
     "@nextui-org/system": "^2.2.6",
     "@nextui-org/theme": "^2.2.11",
+    "axios": "^1.7.7",
     "drizzle-orm": "^0.33.0",
     "framer-motion": "^11.5.6",
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-pageflip": "^2.0.3",
+    "react-toastify": "^10.0.5",
+    "replicate": "^0.34.1",
+    "uuid4": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",
