@@ -58,10 +58,9 @@ function CreateStory() {
       const story = JSON.parse(result?.response.text());
       const resp = await SaveInDB(result?.response.text())
       console.log(resp)
+      const storyId = resp?.[0]?.storyId;
       notify('Story Generated')
-
-      // Redirect to the 'view-story' page after success
-      router.push('/view-story');  // Replace '/view-story' with your desired path
+      router.push(`/ViewStory/${storyId}`);
       
       setLoading(false)
     } catch (e) {
