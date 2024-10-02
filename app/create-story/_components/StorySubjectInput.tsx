@@ -13,7 +13,7 @@ const StorySubjectInput = ({userSelection}:any) => {
             }}
             className='mt-3 max-w-lg'
             onChange={(e)=>userSelection({
-                fieldvalue:e.target.value,
+                fieldValue:e.target.value,
                 fieldName:'storySubject'
             })} 
         />

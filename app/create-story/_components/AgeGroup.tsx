@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { div } from 'framer-motion/client'
 import Image from 'next/image'
-import { Optionfield } from './StoryType';
+import { OptionField } from './StoryType';
 function AgeGroup({userSelection}:any) {
     const OptionList=[
 
@@ -26,11 +26,11 @@ function AgeGroup({userSelection}:any) {
     ]
     const [selectedOption,setSelectedOption]=useState<string>();
 
-    const onUserSelect=(item:Optionfield)=>{
+    const onUserSelect=(item:OptionField)=>{
         setSelectedOption(item.label);
         userSelection({
             fieldValue:item?.label,
-            fieldName:'AgeGroup'
+            fieldName:'ageGroup'
         })
     }
     

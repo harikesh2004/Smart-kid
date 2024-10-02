@@ -3,7 +3,7 @@ import { div } from 'framer-motion/client'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-export interface Optionfield{
+export interface OptionField{
     label:string,
     imageUrl:string,
     isFree:boolean
@@ -33,7 +33,7 @@ function StoryType({userSelection}:any) {
     ]
     const [selectedOption,setSelectedOption]=useState<string>();
 
-    const onUserSelect=(item:Optionfield)=>{
+    const onUserSelect=(item:OptionField)=>{
         setSelectedOption(item.label);
         userSelection({
             fieldValue:item?.label,
